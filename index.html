@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hausaufgabe 12: Ratespiel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Ratespiel "1 aus 100"</h1>
+		<p>
+			<h2>Beschreibung</h2>
+			Finden Sie die durch einen Zufallsgenerator generierte Zahl zwischen 1 und 100. Klicken Sie um zu starten
+			auf den Button Start und geben Sie eine Zahl in das dafür vorgesehene Feld ein und prüfen Sie diese Zahl auf Übereinstimmung mit der Zufallszahl durch 
+			einen Klick auf den Button Check. Sie haben 7 Versuche, um die entsprechende zahl zu finden. Anschließen kann das Spiel mit Klick auf den Button Start erneut gestartet werden,
+			infolge dessen erneut eine Zufallszahl generiert und sieben Versuche zur Verfügung stehen.
+		</p>
+    </div>
+</div>
+
+
+<!-- TODO: Implementieren Sie nach dieser Zeile den Start-Button -->
+<button type="button" class="btn btn-default" id="start"><span class="glyphicon glyphicon-pencil"></span>Start</button>
+<!-- Spieler-Input-Feld -->
+<input type="text" class="form-control" id="user-input">
+
+<!-- TODO: Implementieren Sie nach dieser Zeile den Check-Button -->
+<button type="button" class="btn btn-primary" id="check"><span class="glyphicon glyphicon-plus"></span>Check</button>
+
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Verzuchsanzahl -->
+<h1>Verbleibende Versuche</h1>
+<p class="form-control" id="versuchsanzahl"></p>
+
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Resultatsnachricht -->
+<h1>Resultat</h1>
+<p class="form-control" id="resultat"></p> 
+
+<!-- Einbindung von jQuery -->
+<script src="jquery-2.2.4.min.js"></script>
+<!-- Einbindung von bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Einbindung von tooltipster -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+<!-- Einbindung des eigenen JavaScript-Codes -->
+<script src="ratespiel.js"></script>
+</body>
+</html>
